@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProducto, ProductoService>();
 builder.Services.AddScoped<ICatalogo, CatalogoService>();// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddScoped<ICliente, ClienteService>();
+builder.Services.AddScoped<IVentas, VentasServices>(); // Example registration
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
