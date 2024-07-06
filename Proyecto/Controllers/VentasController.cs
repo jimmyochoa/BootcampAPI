@@ -18,6 +18,24 @@ public class VentasController : Controller
     }
 
     [HttpGet]
+    [Route("GetVentasReporte")]
+    public async Task<Respuesta> GetVentaReporte()
+    {
+        var respuesta = new Respuesta();
+        try
+        {
+            respuesta = await _ventas.GetVentaReporte();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+
+        return respuesta;
+    }
+    
+    [HttpGet]
     [Route("GetVentas")]
     public async Task<Respuesta> GetVentas(string? numFactura, double precio, double vendedor, double clienteId)
     {

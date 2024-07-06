@@ -85,6 +85,31 @@ public class VentasServices : IVentas
         return respuesta;
     }
 
+    public async Task<Respuesta> GetVentaReporte()
+    {
+        var respuesta = new Respuesta();
+        try
+        {
+            respuesta.codigo = "000";
+
+            respuesta.data = await _context.Ventas
+                .Where(v => v.Precio > 100)
+                .GroupBy(v => v.Precio)
+                .Select(g => new
+                {
+                    CantidadRegistro = g.Count(),
+                    ValorConsultado = g.Key
+                }).ToListAsync();
+            respuesta.mensaje = "OK";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+
+        return respuesta;
+    }
     public async Task<Respuesta> PostVenta(Venta venta)
     {
         var respuesta = new Respuesta();
