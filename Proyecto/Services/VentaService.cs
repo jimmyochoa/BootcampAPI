@@ -2,11 +2,13 @@ using Microsoft.EntityFrameworkCore;
 using Proyecto.DTOs;
 using Proyecto.Models;
 using Proyecto.Interfaces;
+using Proyecto.Utilities;
 
 namespace Proyecto.Services;
 public class VentasServices : IVentas
 {
     private readonly VentasContext _context;
+    private ControlError log = new ControlError();
 
     public VentasServices(VentasContext context)
     {
@@ -75,11 +77,13 @@ public class VentasServices : IVentas
 
             respuesta.data = await query.ToListAsync();
             respuesta.mensaje = "Ok";
+            log.LogErrorMetodos("GetVentas", "prueba");
         }
         catch (Exception ee)
         {
             respuesta.codigo = "000";
             respuesta.mensaje = $"Se presentó un error: {ee.Message}";
+            log.LogErrorMetodos(respuesta.mensaje,ee.Message);
         }
 
         return respuesta;

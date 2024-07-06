@@ -11,7 +11,6 @@ using Proyecto.Interfaces;
 public class VentasController : Controller
 {
     private readonly IVentas _ventas;
-
     public VentasController(IVentas ventas)
     {
         this._ventas = ventas;
