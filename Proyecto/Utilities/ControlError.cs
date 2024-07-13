@@ -2,24 +2,27 @@ namespace Proyecto.Utilities;
 
 public class ControlError
 {
-    public void LogErrorMetodos(string error, string metodo)
+    public void LogErrorMetodos(string clase, string error, string metodo)
     {
         var ruta = string.Empty;
         var archivo = string.Empty;
         var mensaje = string.Empty;
-        DateTime fecha = DateTime.Now;
+        DateTime Fecha = DateTime.Now;
         try
         {
             ruta = "/Users/jimmyholguin/Desktop/Logs/";
-            archivo = $"Log_{fecha.ToString("dd-MM-yyyy")}";
+            archivo = $"Log_{Fecha.ToString("dd-MM-yyyy")}";
+
             if (!Directory.Exists(ruta))
             {
                 Directory.CreateDirectory(ruta);
             }
 
             StreamWriter writ = new StreamWriter($"{ruta}\\{archivo}", true);
-            writ.WriteLine($"Se presento una novedad con el metodo: {metodo}, con el error: {error}");
+            writ.WriteLine(
+                $"Se presentó una novedad en la clase: {clase} en el método: {metodo}, con el siguiente error: {error}");
             writ.Close();
+
         }
         catch (Exception e)
         {

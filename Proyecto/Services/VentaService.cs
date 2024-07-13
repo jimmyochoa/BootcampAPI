@@ -77,13 +77,12 @@ public class VentasServices : IVentas
 
             respuesta.data = await query.ToListAsync();
             respuesta.mensaje = "Ok";
-            log.LogErrorMetodos("GetVentas", "prueba");
         }
         catch (Exception ee)
         {
             respuesta.codigo = "000";
-            respuesta.mensaje = $"Se presentó un error: {ee.Message}";
-            log.LogErrorMetodos(respuesta.mensaje,ee.Message);
+            respuesta.mensaje = $"Se presentó una novedad, comunicarse con el administrador del sistema";
+            log.LogErrorMetodos("VentasServices", "GetVentas", ee.Message);
         }
 
         return respuesta;

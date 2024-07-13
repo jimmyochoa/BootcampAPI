@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YsfhqzaC0GY=",
+  "dgSpecHash": "o4SkmoQQ/DFuJ7UubZOAthxAHFYlFuEqlRN2E23nwqVHt2jaXf3qnCEfjHwk/y/ZiFHniOmCfXVQXFXtVIHx5g==",
   "success": true,
-  "projectFilePath": "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/Proyecto.csproj",
+  "projectFilePath": "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj",
   "expectedPackageFiles": [
     "/Users/jimmyholguin/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/jimmyholguin/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

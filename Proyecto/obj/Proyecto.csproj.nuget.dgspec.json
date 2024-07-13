@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/Proyecto.csproj": {}
+    "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj": {}
   },
   "projects": {
-    "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/Proyecto.csproj": {
+    "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/Proyecto.csproj",
+        "projectUniqueName": "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/Proyecto.csproj",
+        "projectPath": "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj",
         "packagesPath": "/Users/jimmyholguin/.nuget/packages/",
-        "outputPath": "/Users/jimmyholguin/Desktop/Proyecto/Proyecto/obj/",
+        "outputPath": "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jimmyholguin/.nuget/NuGet/NuGet.Config"
@@ -33,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
