@@ -32,5 +32,41 @@ public class ClienteController : Controller
 
         return respuesta;
     }
+
+    [HttpPost]
+    [Route("PostCliente")]
+    public async Task<Respuesta> PostCliente([FromBody] Cliente cliente)
+    {
+        var respuesta = new Respuesta();
+        try
+        {
+            respuesta = await _cliente.PostCliente(cliente);
+        }
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e);
+            throw;
+        }
+        return respuesta;
+    }
+
+    [HttpPut]
+    [Route("PutCliente")]
+    public async Task<Respuesta> PutCliente([FromBody] Cliente cliente)
+    {
+        var respuesta = new Respuesta();
+        try
+        {
+            respuesta = await _cliente.PutCliente(cliente);
+        }
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e);
+            throw;
+        }
+        return respuesta;
+    }
 }
 
