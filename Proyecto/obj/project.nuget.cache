@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "o4SkmoQQ/DFuJ7UubZOAthxAHFYlFuEqlRN2E23nwqVHt2jaXf3qnCEfjHwk/y/ZiFHniOmCfXVQXFXtVIHx5g==",
+  "dgSpecHash": "dv5Ahx6ah6MDM1/3vZIqd/Kl9AmMcO5UPaHia7YsM07pEBFMq3Vv30YZQsxYc5k2PngU38W5C6QsuPYq/7xgIg==",
   "success": true,
   "projectFilePath": "/Users/jimmyholguin/Desktop/NetCoreAPI/Proyecto/Proyecto.csproj",
   "expectedPackageFiles": [
     "/Users/jimmyholguin/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/jimmyholguin/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/jimmyholguin/.nuget/packages/dtogenerator/1.0.0/dtogenerator.1.0.0.nupkg.sha512",
     "/Users/jimmyholguin/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/jimmyholguin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/jimmyholguin/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

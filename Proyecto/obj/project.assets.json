@@ -46,6 +46,9 @@
           }
         }
       },
+      "DTOGenerator/1.0.0": {
+        "type": "package"
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -2863,6 +2866,19 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "DTOGenerator/1.0.0": {
+      "sha512": "mIaoOIsIOBEpYScS/ROovGPuufsOI+jQ1vrd0d9C+86lAqHW6ftoJMAahNeYJL8ERxqwFC31IX/av2dhJP2cYg==",
+      "type": "package",
+      "path": "dtogenerator/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.txt",
+        "content/DTO.tt",
+        "dtogenerator.1.0.0.nupkg.sha512",
+        "dtogenerator.nuspec"
       ]
     },
     "Humanizer/2.14.1": {
@@ -8210,6 +8226,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DTOGenerator >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
@@ -8254,6 +8271,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "DTOGenerator": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
